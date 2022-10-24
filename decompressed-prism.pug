@@ -1,10 +1,10 @@
 //- IMAGE DETAILS
 -let imageDetail01 = "_video announcement"
--let imageDetail02 = "_interactive experience : desktop version 1"
+-let imageDetail02 = "_interactive experience : boarding"
 -let imageDetail03 = "_poster series : printed campaign"
--let imageDetail04 = "_interactive experience : desktop version 2"
--let imageDetail05 = "_interactive experience : desktop version 3"
--let imageDetail06 = "_landing page : mobile version"
+-let imageDetail04 = "_interactive experience : autopilot"
+-let imageDetail05 = "_interactive experience : landing"
+-let imageDetail06 = "_mobile version"
 
 //- PROJECT INFORMATION
 -let clientName = "Salvatore Vitale & MBAL"
@@ -64,28 +64,47 @@ html(lang='en')
             .m-pageSplit_projectLeft__wrapper
                 //- Decompressed Prism teaser
                 section.m-image__wrapper.video-margin
-                    span.a-image__description__item _video : teaser
+                    span.a-image__description__item #{imageDetail01}
                     video.iframe(playsinline preload="auto" autoplay muted loop="1")
                         source(src="/public/img/decompressed/decompressed-teaser.mp4" type="video/mp4")
-                //-DP vimeo boarding
+                        source(src="/public/img/decompressed/decompressed-teaser.webm" type="video/webm")
+                        p #{imageDetail01}
+                //-DP vimeo boarding [IFRAME]
                 section.m-image__wrapper.video-margin
+                    span.a-image__description__item #{imageDetail02}
                     iframe.iframe(src="https://player.vimeo.com/video/757482435?h=59e00c4ed3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
                     script(src="https://player.vimeo.com/api/player.js")
-                //-DP vimeo autopilot
-                section.m-image__wrapper.video-margin
-                    iframe.iframe(src="https://player.vimeo.com/video/757214732?h=4aa2d3e65d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
-                    script(src="https://player.vimeo.com/api/player.js")
-
-                //-DP vimeo autopilot
-                section.m-image__wrapper.video-margin
-                    iframe.iframe(src="https://player.vimeo.com/video/757482628?h=098256aa7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
-                    script(src="https://player.vimeo.com/api/player.js")
-
+                    p #{imageDetail02}
                 //- Decompressed Prism poster motion
                 section.m-image__wrapper.video-margin
-                    span.a-image__description__item _motion : poster 
+                    span.a-image__description__item #{imageDetail03} 
                     video.ratio2(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
                         source(src="/public/img/decompressed/decompressed-poster-motion.mp4" type="video/mp4")
+                        source(src="/public/img/decompressed/decompressed-poster-motion.webm" type="video/webm")
+                        p #{imageDetail03}
+                //-DP vimeo autopilot [IFRAME]
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item #{imageDetail04}
+                    iframe.iframe(src="https://player.vimeo.com/video/757214732?h=4aa2d3e65d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
+                    script(src="https://player.vimeo.com/api/player.js")
+                    p #{imageDetail04}
+
+                //-DP vimeo autopilot [IFRAME]
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item #{imageDetail05}
+                    iframe.iframe(src="https://player.vimeo.com/video/757482628?h=098256aa7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
+                    script(src="https://player.vimeo.com/api/player.js")
+                    p #{imageDetail05}
+
+                //- DP Mobile evrsion
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item #{imageDetail06} 
+                    video.ratio2(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                        source(src="/public/img/decompressed/decompressed-mobile-video.mp4" type="video/mp4")
+                        source(src="/public/img/decompressed/decompressed-mobile-video.webm" type="video/webm")
+                        p #{imageDetail06}
+
+
                         
                 //- footer mobile
                 include includes/footer-mobile
