@@ -97,12 +97,10 @@ html(lang='en')
                     p #{imageDetail05}
 
                 //- DP Mobile evrsion
-                section.m-image__wrapper.video-margin
-                    span.a-image__description__item #{imageDetail06} 
-                    video.ratio2(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
-                        source(src="/public/img/decompressed/decompressed-mobile-video.mp4" type="video/mp4")
-                        source(src="/public/img/decompressed/decompressed-mobile-video.webm" type="video/webm")
-                        p #{imageDetail06}
+                section(class="m-image__wrapper")
+                    span(class="a-image__description__item") #{imageDetail06}
+                    picture(class="a-projectImage__item")
+                        img(src="/public/img/decompressed/decompressed-mobile.gif", alt=imageDetail06)
 
 
                         
