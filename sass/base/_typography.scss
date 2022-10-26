@@ -13,7 +13,6 @@ html {
 body {
   font-size: $type-basis;
   font-family: "Roboto", Arial, sans-serif;
-  /*font-family: helvetica, arial, sans-serif;*/
   ::selection {
     color: $second;
     background: $first;
@@ -103,13 +102,13 @@ button {
 //- typographie des element en hover sur la cover
 //- elements principaux
 .overlay__wrapper {
-  font-size: clamp(0.833rem, 2vw, 1rem);
+  font-size: clamp($level-3, 0.9rem, $level-4);
 }
 
 //- elemtns informations
 .container_bottom,
 .index {
-  font-size: $level-3;
+  font-size: clamp($level-2, $level-3, $type-basis);
 }
 
 /**
