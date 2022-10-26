@@ -162,7 +162,7 @@
             "title" : "Take Me I Love You",
             "editor":"Timur Si Qin",
             "description" : "Typographic productions displayed in 4 artworks created by the artist.",
-            "galery" : "Von Ammon Co Galery.",
+            "gallery" : "Von Ammon Co gallery.",
             "area": "Washington DC, USA."
     };
 -
@@ -207,8 +207,8 @@
 //- Projets
 -
     let elc = {
-        "client":"Baptiste Leroy",
-        "name":"Espace Loisir Culture",
+        "client":"Espace Loisir Culture",
+        "name":"ELC",
         "url":"/espace-loisir-culture.html",
         "date":"2022",
         "area":"Grand Est region, FR",
@@ -220,6 +220,7 @@
     let decompressed = {
         "client":"Salvatore Vitale",
         "name":'Decompressed Prism',
+        "gallery":"Museum of Fine Arts, Le Locle",
         "url":"/decompressed-prism.html",
         "date":"2022",
         "area":"Le Locle, CH",
@@ -276,7 +277,7 @@
     let newpeace = {
         "name":"Take Me I Love You",
         "url":"/newpeace.html",
-        "client":"Timur Si Qin",
+        "client":"Timur Si-Qin",
         "project":"New Peace",
         "gallery":"Von Ammon Co",
         "date":"2020",
@@ -289,7 +290,7 @@
 -
     let hotline = {
         "name":"Hotline Hotline : Actualite Series",
-        "client":"JBE Books",
+        "client":"Mathieu Cénac",
         "url":"/hotline.html",
         "field01":"Art & Design,",
         "field02": "Publishing Platform",
@@ -546,7 +547,7 @@ html(lang='en')
                                         h4.title-service#exhibition #{expoNewPeace.title}
                                     p.content-service #{expoNewPeace.editor}
                                     p.content-service #{expoNewPeace.description}
-                                    p.content-service #{expoNewPeace.galery}
+                                    p.content-service #{expoNewPeace.gallery}
                                     p.content-service #{expoNewPeace.area}
                             //- Exhibition GDF 
                             ul.service
@@ -556,7 +557,7 @@ html(lang='en')
                                     a.highlight__link(href=expoGdf.url target="_blank" rel="noreferrer noopener")
                                         h4.title-service #{expoGdf.title}
                                     p.content-service #{expoGdf.description}
-                                    p.content-service #{expoGdf.galery}
+                                    p.content-service #{expoGdf.gallery}
                                     p.content-service #{expoGdf.area}
                             //- Exhibition Le signe 
                             ul.service
@@ -566,7 +567,7 @@ html(lang='en')
                                     a.highlight__link(href=expoPmedium.url target="_blank" rel="noreferrer noopener")
                                         h4.title-service#exhibition #{expoPmedium.title}
                                     p.content-service #{expoPmedium.description}
-                                    p.content-service #{expoPmedium.galery}
+                                    p.content-service #{expoPmedium.gallery}
                                     p.content-service #{expoPmedium.area}
                             //- Exhibition Offprint 
                             ul.service
@@ -576,7 +577,7 @@ html(lang='en')
                                     a.highlight__link(href=expoOffprint.url target="_blank" rel="noreferrer noopener")
                                         h4.title-service #{expoOffprint.title}
                                     p.content-service #{expoOffprint.description}
-                                    p.content-service #{expoOffprint.galery}
+                                    p.content-service #{expoOffprint.gallery}
                                     p.content-service #{expoOffprint.area}
                             //- Exhibition Nu signal 
                             ul.service
@@ -586,7 +587,7 @@ html(lang='en')
                                     a(href=expoNuSignal.url target="_blank" rel="noreferrer noopener")
                                         h4.title-service#exhibition #{expoNuSignal.title}
                                     p.content-service #{expoNuSignal.description}
-                                    p.content-service #{expoNuSignal.galery}
+                                    p.content-service #{expoNuSignal.gallery}
                                     p.content-service #{expoNuSignal.area}
                             //- Exhibition Cringe 
                             ul.service
@@ -596,7 +597,7 @@ html(lang='en')
                                     a(href=expoEvangiles.url target="_blank" rel="noreferrer noopener")
                                         h4.title-service#exhibition #{expoEvangiles.title}
                                     p.content-service #{expoEvangiles.description}
-                                    p.content-service #{expoEvangiles.galery}
+                                    p.content-service #{expoEvangiles.gallery}
                                     p.content-service #{expoEvangiles.area}
 
                 //- footer desktop 
@@ -685,6 +686,9 @@ html(lang='en')
                                     ul.category_wrapper
                                         li.index Title
                                         li.indexData #{decompressed.name}
+                                    ul.category_wrapper
+                                        li.index Museum
+                                        li.indexData #{decompressed.gallery}
                                     ul.category_wrapper
                                         li.index Year
                                         li.indexData #{decompressed.date}
