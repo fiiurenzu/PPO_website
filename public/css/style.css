@@ -534,7 +534,7 @@ video {
   flex-direction: column;
   width: 90%;
 }
-.container_bottom > div {
+.container_bottom > ul {
   display: flex;
   flex-direction: row;
 }
