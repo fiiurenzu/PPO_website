@@ -96,12 +96,13 @@ html(lang='en')
                     script(src="https://player.vimeo.com/api/player.js")
                     p #{imageDetail05}
 
-                //- DP Mobile evrsion
-                section(class="m-image__wrapper")
-                    span(class="a-image__description__item") #{imageDetail06}
-                    picture(class="a-projectImage__item")
-                        img(src="/public/img/decompressed/decompressed-mobile.gif", alt=imageDetail06)
-
+                //- DP Mobile version
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item #{imageDetail06}
+                    video.iframe(playsinline preload="auto" autoplay muted loop="1")
+                        source(src="/public/img/decompressed/decompressed-mobile.mp4" type="video/mp4")
+                        source(src="/public/img/decompressed/decompressed-mobile.webm" type="video/webm")
+                        p #{imageDetail06}
 
                         
                 //- footer mobile
@@ -112,7 +113,7 @@ html(lang='en')
                 //- Information : client title area description
                 //- Client
                 section.m-container_grid_client
-                    div.a-project_info__item Client.
+                    div.a-project_info__item Client
                     h1.a-project_info__item #{clientName}
                     a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
 
@@ -120,13 +121,13 @@ html(lang='en')
                 section.m-container_grid_description#returnTop
                     div.a-project_info__item Descr.
                     div.a-project_info__item #{catName}
-                    div.a-project_info__item Area.
+                    div.a-project_info__item Area
                     div.a-project_info__item #{localisationProject}
                         span#countryFlagEmoji #{countryFlag}
 
                 //- Title projet
                 section.m-container_grid_label
-                    div.a-project_info__item Label.
+                    div.a-project_info__item Label
                     div.a-project_info__item #{labelProject}
 
                 
@@ -138,10 +139,10 @@ html(lang='en')
                         #list_services_still 
                             span Service(s) : 
                         ul#list_services_justify
-                            span #{service01}
-                            span #{service02}
-                            span #{service03}
-                            span #{service04}
+                            li #{service01}
+                            li #{service02}
+                            li #{service03}
+                            li #{service04}
 
                     //- TEXTE CONTENU\
                     .m-text_project__wrapper
