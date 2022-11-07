@@ -86,7 +86,7 @@ html(lang='en')
                             img(src="/public/img/elc/elc-poster-1920.jpg", alt=imageDetail01)
                 //- IMG ELC 01
                 section.m-image__wrapper
-                        span.a-image__description__item #{imageDetail01}
+                        span.a-image__description__item #{imageDetail02}
                         picture.a-projectImage__item
                             source(
                             type="image/webp"
@@ -106,7 +106,7 @@ html(lang='en')
                             sizes="\
                             (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
                             )
-                            img(src="/public/img/elc/elc-01-1920.jpg", alt=imageDetail01)
+                            img(src="/public/img/elc/elc-01-1920.jpg", alt=imageDetail02)
                 //- IMG ELC 02
                 section.m-image__wrapper
                         span.a-image__description__item #{imageDetail02}
@@ -373,10 +373,10 @@ html(lang='en')
                         #list_services_still 
                             span Service(s) : 
                         ul#list_services_justify
-                            span #{service01}
-                            span #{service02}
-                            span #{service03}
-                            span #{service04}
+                            li #{service01}
+                            li #{service02}
+                            li #{service03}
+                            li #{service04}
 
                     //- TEXTE CONTENU\
                     .m-text_project__wrapper
@@ -388,7 +388,6 @@ html(lang='en')
                             span External links : 
                         #list_services_justify.external_links
                             a.margin-right.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
-                            a.margin-right.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
                             a#onlineExp(href=linkDp target="_blank" rel="noreferrer noopener") #{linkDetail03}
                     .o-parent__container
                         #border-top 
@@ -405,7 +404,7 @@ html(lang='en')
                             ul.service
                                 li.number-service 01
                                 li.infos-service
-                                    h4.title-service #{titleService01}
+                                    p.title-service #{titleService01}
                                     p.content-service #{contentService011}
                                     p.content-service #{contentService012}
                                     p.content-service #{contentService013}
@@ -413,7 +412,7 @@ html(lang='en')
                             ul.service
                                 li.number-service 02
                                 li.infos-service
-                                    h4.title-service #{titleService02}
+                                    p.title-service #{titleService02}
                                     p.content-service #{contentService021}
                                     p.content-service #{contentService022}
                 
