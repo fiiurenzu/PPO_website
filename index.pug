@@ -206,6 +206,17 @@
 
 //- Projets
 -
+    let elcFestival = {
+        "client":"Espace Loisir Culture",
+        "name":"Festival de Cinéma de Montmirail",
+        "url":"/elc-festival.html",
+        "date":"2022",
+        "area":"Grand Est region, FR",
+        "content":"4 images",
+        "field01":"Graphic design,",
+        "field02":"Image direction"
+    }
+-
     let elc = {
         "client":"Espace Loisir Culture",
         "name":"ELC",
@@ -417,7 +428,6 @@ html(lang='en')
                             a.highlight__link.email(href="mailto:application@panamapapersoffice.com?subject=Application") 🦎 Application job & internship
                             div.infoAvailable _No internship available at the the moment.
 
-                
                 //- Container contribution + exhibition
                 section.o-contributionsExhibitions__container
                     //- Accordeon contribution exhibition 
@@ -604,7 +614,52 @@ html(lang='en')
 
             //- Right Container
             .m-pageSplit_homeRight__wrapper
-
+                //- elc-festival
+                header.o-coverImage__container
+                    a.m-coverImage__wrapper(href=elcFestival.url)
+                        picture.a-coverImage__item 
+                            source(
+                            type="image/webp" 
+                            srcset="\
+                            /public/img/elc-festival/cover/cover_elc-1152.webp 1152w,\
+                            /public/img/elc-festival/cover/cover_elc-1440.webp 1440w,\
+                            /public/img/elc-festival/cover/cover_elc-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) calc(50vw - 11px),\
+                            (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg" 
+                            srcset="\
+                            /public/img/elc-festival/cover/cover_elc-1152.jpg 1152w,\
+                            /public/img/elc-festival/cover/cover_elc-1440.jpg 1440w,\
+                            /public/img/elc-festival/cover/cover_elc-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) calc(50vw - 11px),(max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/elc-festival/cover/cover_elc-1920.jpg", alt=elcFestival.name)
+                        //- Image Overlay
+                        .image__overlay
+                            div.overlay__wrapper
+                                div.container_top
+                                    ul.category_wrapper
+                                        li.index Client
+                                        li.indexData #{elcFestival.client}
+                                    ul.category_wrapper
+                                        li.index Title
+                                        li.indexData #{elcFestival.name}
+                                    ul.category_wrapper
+                                        li.index Year
+                                        li.indexData #{elcFestival.date}
+                                div.container_bottom
+                                    ul.category_wrapper
+                                        li.index Page content
+                                        li.indexData #{elcFestival.content}
+                                    ul.category_wrapper
+                                        li.index Working fields
+                                        li.indexData #{elcFestival.field01}
+                                        li.indexData #{elcFestival.field02}
+                                        li.indexData #{elcFestival.field03}
                 //- elc
                 header.o-coverImage__container
                     a.m-coverImage__wrapper(href=elc.url)

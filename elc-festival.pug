@@ -1,0 +1,234 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_poster 1 : 120×176 cm"
+-let imageDetail02 = "_poster 2 : 120×176 cm"
+-let imageDetail03 = "_poster 3 : 120×176 cm"
+-let imageDetail04 = "_poster 4 : 120×176 cm"
+
+//- PROJECT INFORMATION
+-let clientName = "Espace Loisir Culture"
+-let clientNameMobile = "ELC"
+-let catName = "Festival de Cinéma de Montmirail"
+-let labelProject = "ELC-CA-2022"
+-let localisationProject = "Grand Est region, FR"
+-let countryFlag = "🇫🇷"
+-let dateProject = "2022"
+
+//- SERVICES
+-let service01 = "Graphic design,"
+-let service02 = "Image direction "
+
+
+//- EXTERNAL LINKS
+-let link01 = "https://www.espaceloisirculture.com/"
+
+//- LINK DETAILS 
+-let linkDetail01 = "Espace Loisir Culture"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2022"
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "" 
+-let contentService011 = ""
+-let contentService012 = ""
+-let contentService013 = ""
+
+//-NEXT PREVIOUS LINKS
+-let previousProject=""
+-let nextProject = "/espace-loisir-culture.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+            .m-pageSplit_projectLeft__wrapper
+                //- IMG ELC 1
+                section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/elc-festival/poster1-1152.webp 1152w,\
+                                /public/img/elc-festival/poster1-1440.webp 1440w,\
+                                /public/img/elc-festival/poster1-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/elc-festival/poster1-1152.jpg 1152w,\
+                                /public/img/elc-festival/poster1-1440.jpg 1440w,\
+                                /public/img/elc-festival/poster1-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/elc-festival/poster1-1920.jpg", alt=imageDetail01)
+                //- IMG ELC 2
+                section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/elc-festival/poster2-1152.webp 1152w,\
+                                /public/img/elc-festival/poster2-1440.webp 1440w,\
+                                /public/img/elc-festival/poster2-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/elc-festival/poster2-1152.jpg 1152w,\
+                                /public/img/elc-festival/poster2-1440.jpg 1440w,\
+                                /public/img/elc-festival/poster2-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/elc-festival/poster2-1920.jpg", alt=imageDetail02)
+                //- IMG ELC 3
+                section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/elc-festival/poster3-1152.webp 1152w,\
+                                /public/img/elc-festival/poster3-1440.webp 1440w,\
+                                /public/img/elc-festival/poster3-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/elc-festival/poster3-1152.jpg 1152w,\
+                                /public/img/elc-festival/poster3-1440.jpg 1440w,\
+                                /public/img/elc-festival/poster3-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/elc-festival/poster3-1920.jpg", alt=imageDetail03)
+                //- IMG ELC 4
+                section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/elc-festival/poster4-1152.webp 1152w,\
+                                /public/img/elc-festival/poster4-1440.webp 1440w,\
+                                /public/img/elc-festival/poster4-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/elc-festival/poster4-1152.jpg 1152w,\
+                                /public/img/elc-festival/poster4-1440.jpg 1440w,\
+                                /public/img/elc-festival/poster4-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/elc-festival/poster3-1920.jpg", alt=imageDetail04)
+
+                //- footer mobile
+                include includes/footer-mobile
+
+            //- Container Right 
+            div.m-pageSplit_projectRight__wrapper
+                //- Information : client title area description
+                //- Client
+                section.m-container_grid_client
+                    div.a-project_info__item Client
+                    h1.a-project_info__item#desktop #{clientName}
+                    h1.a-project_info__item#mobile #{clientNameMobile}
+                    a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                //- Title projet
+                section.m-container_grid_description#returnTop
+                    div.a-project_info__item Descr.
+                    div.a-project_info__item #{catName}
+                    div.a-project_info__item Area
+                    div.a-project_info__item #{localisationProject}
+                        span#countryFlagEmoji #{countryFlag}
+
+                //- Title projet
+                section.m-container_grid_label
+                    div.a-project_info__item Label
+                    div.a-project_info__item #{labelProject}
+
+                
+                //- Container Project
+                //- Textes projets
+                section.m-text_project__container
+                    //- List Services
+                    .scrollmenu.scroll_horizontal#list_services
+                        #list_services_still 
+                            span Service(s) : 
+                        ul#list_services_justify
+                            li #{service01}
+                            li #{service02}
+                            li #{service03}
+                            li #{service04}
+
+                    //- TEXTE CONTENU\
+                    .m-text_project__wrapper
+                        p.a-text_project__itemVisual Image direction & poster series designed for the 3rd edition of the Film festival in Montmirail. Coming in 2023.
+
+                    //- External Website
+                    .scrollmenu.scroll_horizontal
+                        #list_services_still
+                            span External links : 
+                        #list_services_justify.external_links
+                            a.margin-right.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                            a#onlineExp(href=linkDp target="_blank" rel="noreferrer noopener") #{linkDetail03}
+                    .o-parent__container
+                        #border-top 
+                        .copyright-image
+                            span ©
+                            span #{credit01}
+
+                //- Accorddion details
+                .o-details_accordion__container
+                    .m-details_accordion__wrapper
+                        button(type="button" class="accordion--services") Details
+                        .panel
+                            //- Service 01
+                            ul.service
+                                li.number-service 01
+                                li.infos-service
+                                    p.title-service #{titleService01}
+                                    p.content-service #{contentService011}
+                                    p.content-service #{contentService012}
+                                    p.content-service #{contentService013}
+                            //- Service 02
+                            ul.service
+                                li.number-service 02
+                                li.infos-service
+                                    p.title-service #{titleService02}
+                                    p.content-service #{contentService021}
+                                    p.content-service #{contentService022}
+                
+                //- Next previous project
+                section.o-navigation_buttons
+                    div.m-navigation_buttons
+                        div#colLeft.a-navigation_buttons
+                        a.a-navigation_buttons._slideHover(href=nextProject) Next project 
+
+                //-Footer Desktop
+                include includes/footer-desktop-project
+
+        //- Mixin js scripts
+        include includes/script
+        
